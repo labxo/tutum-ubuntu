@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Honglin Feng <hfeng@tutum.co> 
+MAINTAINER Honglin Feng <hfeng@tutum.co>
 
 # Install packages
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install openssh-server pwgen
@@ -13,3 +13,5 @@ ENV AUTHORIZED_KEYS **None**
 
 EXPOSE 22
 CMD ["/run.sh"]
+
+VOLUME ["/volume0","/volume1","/volume2","/volume3","/volume4","/volume5","/volume6","/volume7","/volume8","/volume9"]
